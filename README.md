@@ -1,73 +1,124 @@
-# Welcome to your Lovable project
+# DIY Components - React E-commerce Application
 
-## Project info
+> Modern React e-commerce platform for electronic components, migrated from Nuxt.js 2
 
-**URL**: https://lovable.dev/projects/9eeef19b-653c-4304-a4cf-919d1d9a6f50
+[![React](https://img.shields.io/badge/React-18-blue.svg)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue.svg)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-5-purple.svg)](https://vitejs.dev/)
 
-## How can I edit this code?
+## 🚀 Quick Start
 
-There are several ways of editing your application.
+```bash
+# Install dependencies
+npm install
 
-**Use Lovable**
+# Set up environment variables
+cp .env.example .env
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9eeef19b-653c-4304-a4cf-919d1d9a6f50) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Run development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Visit: `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📋 Project Overview
 
-**Use GitHub Codespaces**
+This is a complete React rewrite of the DIY Components e-commerce platform, originally built with Nuxt.js 2. It connects to the existing backend API at `api.diycomponents.in`.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**Key Features:**
+- 🔐 Full authentication (login/register)
+- 🛍️ Product catalog with search & filtering
+- 📦 Category browsing
+- 🛒 Shopping cart management
+- 💳 Checkout flow (coming soon)
+- 📱 Fully responsive design
 
-## What technologies are used for this project?
+## 🛠️ Tech Stack
 
-This project is built with:
+- **Frontend:** React 18 + TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS + shadcn/ui
+- **Routing:** React Router v6
+- **State:** React Context API
+- **Forms:** React Hook Form + Zod
+- **HTTP:** Axios
+- **Backend:** Existing Node.js API
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📖 Documentation
 
-## How can I deploy this project?
+See [REACT_APP_GUIDE.md](./REACT_APP_GUIDE.md) for:
+- Detailed setup instructions
+- API documentation
+- Project structure
+- Development guidelines
+- Feature roadmap
 
-Simply open [Lovable](https://lovable.dev/projects/9eeef19b-653c-4304-a4cf-919d1d9a6f50) and click on Share -> Publish.
+## 🌐 Live URLs
 
-## Can I connect a custom domain to my Lovable project?
+- **Production:** Coming soon
+- **Backend API:** https://api.diycomponents.in
 
-Yes, you can!
+## 📁 Key Directories
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```
+src/
+├── pages/         # Page components (Home, Products, Cart, etc.)
+├── components/    # Reusable components (Header, Footer, UI)
+├── contexts/      # React contexts (Auth, Cart)
+├── lib/          # Utilities (API client, helpers)
+└── types/        # TypeScript type definitions
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🔧 Available Scripts
+
+```bash
+npm run dev         # Start development server
+npm run build       # Build for production  
+npm run preview     # Preview production build
+npm run lint        # Run ESLint
+```
+
+## 🎨 Design System
+
+The app uses a custom design system based on:
+- **Primary:** Orange (#E65100) - Electronics theme
+- **Secondary:** Deep Blue (#002D4A)
+- **Components:** shadcn/ui with custom styling
+- **Responsive:** Mobile-first approach
+
+## ✅ Migration Status
+
+### Completed
+- ✅ Project setup & build configuration
+- ✅ Design system & theming
+- ✅ Authentication (login/register/verify)
+- ✅ Home page with hero & featured products
+- ✅ Product listing & search
+- ✅ Product detail pages
+- ✅ Category browsing
+- ✅ Shopping cart
+- ✅ Responsive navigation
+- ✅ API integration
+
+### In Progress
+- 🚧 Checkout flow
+- 🚧 User dashboard (orders, profile, addresses)
+- 🚧 Payment integration (Razorpay)
+- 🚧 Order tracking
+
+## 🤝 Contributing
+
+This project follows the existing codebase patterns:
+1. TypeScript for type safety
+2. Component-based architecture
+3. Semantic design tokens (no hardcoded colors)
+4. Proper error handling
+5. Responsive design
+
+## 📄 License
+
+See LICENSE file for details.
+
+---
+
+**Original Nuxt.js 2 project:** Archived in `user-uploads://nuxt-web.txt`
